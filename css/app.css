@@ -21,6 +21,11 @@ a {
     color: var(--black);
 }
 
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Header y Navegacion */
 .nombre-sitio {
     margin: 50px 0;
@@ -29,7 +34,17 @@ a {
 .nombre-sitio span {
     color: var(--blue);
 }
-.nav-principal {
+.contenedor-navegacion {
     border-top: 1px solid var(--lightGray);
+}
+.nav-principal {
     padding: 20px 0;
+}
+
+.hero {
+    background-image: url("../img/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 550px;
 }
