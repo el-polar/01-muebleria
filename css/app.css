@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 REM = 10px */
 }
 
 *,
@@ -10,6 +12,7 @@ html {
 
 body {
     font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
 }
 
 :root {
@@ -27,7 +30,7 @@ a {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -38,17 +41,17 @@ img {
 
 /* Header y Navegacion */
 .nombre-sitio {
-    margin: 50px 0;
+    margin: 5rem 0;
     text-align: center;
 }
 .nombre-sitio span {
     color: var(--blue);
 }
 .contenedor-navegacion {
-    border-top: 1px solid var(--lightGray);
+    border-top: 0.1rem solid var(--lightGray);
 }
 .nav-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-evenly;
 }
@@ -58,7 +61,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 550px;
+    height: 55rem;
 }
 
 /* Categorias */
@@ -68,16 +71,16 @@ img {
 .categoria a {
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 }
 .categoria a:hover {
     background-color: var(--blue);
     color: var(--white);
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 1rem;
 }
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
