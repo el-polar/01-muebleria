@@ -12,6 +12,7 @@ html {
     --blue: #037bce;
     --black: #000;
     --lightGray: #e1e1e1;
+    --white: #fff;
 }
 
 /* Globales */
@@ -24,6 +25,11 @@ a {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Header y Navegacion */
@@ -49,4 +55,25 @@ a {
     background-size: cover;
 
     height: 550px;
+}
+
+/* Categorias */
+.categorias h2 {
+    text-align: center;
+}
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    border-bottom-right-radius: 10px;
+}
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
