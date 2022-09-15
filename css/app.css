@@ -21,6 +21,8 @@ body {
     --black: #000;
     --lightGray: #e1e1e1;
     --white: #fff;
+    --green: #8cbc00;
+    --darkGreen: #769c02;
 }
 
 /* Globales */
@@ -54,6 +56,24 @@ img {
     display: block;
 }
 
+.btn {
+    background-color: var(--green);
+    display: block;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
+}
+.btn:hover {
+    background-color: var(--darkGreen);
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
 /* Header y Navegacion */
 .nombre-sitio {
     margin: 5rem 0;
@@ -83,9 +103,6 @@ img {
 /* Categorias */
 .categorias {
     padding-top: 5rem;
-}
-.categorias h2 {
-    text-align: center;
 }
 .categoria a {
     display: block;
@@ -126,4 +143,27 @@ img {
     flex-basis: 50%;
     padding-left: 10rem;
     color: var(--white);
+}
+
+/* Listado de Productos */
+.contenido-principal {
+    padding-top: 5rem;
+}
+.producto {
+    background-color: var(--blue);
+}
+.texto-producto {
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+}
+.texto-producto h3 {
+    margin: 0;
+}
+.texto-producto p {
+    margin: 0 0 0.5rem 0;
+}
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
 }
