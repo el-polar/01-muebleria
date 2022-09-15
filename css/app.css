@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: "Raleway", sans-serif;
+}
+
 :root {
     --blue: #037bce;
     --black: #000;
