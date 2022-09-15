@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --blue: #037bce;
+    --black: #000;
+    --lightGray: #e1e1e1;
+}
+
+/* Globales */
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Header y Navegacion */
+.nombre-sitio {
+    margin: 50px 0;
+    text-align: center;
+}
+.nombre-sitio span {
+    color: var(--blue);
+}
+.nav-principal {
+    border-top: 1px solid var(--lightGray);
+    padding: 20px 0;
+}
