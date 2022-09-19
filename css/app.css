@@ -18,6 +18,7 @@ body {
 
 :root {
     --blue: #037bce;
+    --darkBlue: #005485;
     --black: #000;
     --lightGray: #e1e1e1;
     --white: #fff;
@@ -65,9 +66,11 @@ img {
     padding: 1rem;
     transition: background-color 0.3s ease-out;
     text-align: center;
+    border: none;
 }
 .btn:hover {
     background-color: var(--darkGreen);
+    cursor: pointer;
 }
 
 /* Utilidades */
@@ -285,4 +288,38 @@ img {
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/* Contacto */
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset {
+    border: 0.1rem solid var(--black);
+    margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: var(--darkBlue);
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label {
+    flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+    flex: 1;
+    border: 0.1rem solid var(--lightGray);
+    padding: 1rem;
 }
