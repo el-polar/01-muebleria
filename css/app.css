@@ -33,13 +33,28 @@ h3 {
     margin: 0 0 5rem 0;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
 }
 h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
 }
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
 }
 
 a {
@@ -95,16 +110,26 @@ img {
 .nav-principal {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 }
-
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
 .hero {
     background-image: url("../img/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    height: 55rem;
+    height: 25rem;
+}
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
 }
 
 /* Categorias */
