@@ -439,8 +439,12 @@ img {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .galeria img {
     height: 40rem;
