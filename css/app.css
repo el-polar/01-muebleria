@@ -82,6 +82,12 @@ img {
     transition: background-color 0.3s ease-out;
     text-align: center;
     border: none;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+    }
 }
 .btn:hover {
     background-color: var(--darkGreen);
